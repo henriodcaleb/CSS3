@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css3 transformations, transitions, and amimations.</title>
+  
+    
+
+      <style>
+
+        .box3{
+        width: 200px;
+        height: 200px;
+        background: turquoise;
+        transform: translate(650px, -400px);
+        transition: 2sec ease;
+        }
+
+        .box3:hover{
+            transform: rotate(20deg)
+        }
+
+        .box3:hover h3{
+            transform: rotate(-20deg)
+        }
+
+
+        .box2{
+         width: 200px;
+         height: 200px;
+         background: peachpuff;
+         transition: .5s ease; 
+         transform: translate(400px, -200px)   
+        }
+        .box2:hover{
+            background: purple;
+        }
+
+      .box{
+        width: 200px;
+        height: 200px;
+        background:green;
+        transition:all .5s ease;
+        
+        
+      }
+      
+      .box h1{
+        opacity:1;
+        transition:all .5s linear;
+      }
+      
+      .box h2{
+        opacity:0;
+       transition:all .5s linear;
+      }
+      
+      .box:hover{
+        background:green;
+        width: 250px;
+        height: 250px;
+        opacity:1; 
+        transform: translate(150px, 150px);
+      }
+      
+      .box:hover h1{
+        opacity:1;
+        
+      }
+      
+      .box:hover h2{
+        opacity:1;
+        transform: rotate(-20deg);
+      }
+      </style>
+    </head>
+    <body>
+      <div class="box">
+            <h1> ANIMATION  </h1>
+                  
+                 
+      </div>
+       <div class="box2">
+        <h2>
+        TRANSITION    
+        </h2>     
+        
+    </div>
+
+    <div class="box3">
+<h3>TRANSFORMATION</h3>
+
+    </div>
+
+
+</body>
+</html> 
+
+ 
+
+
